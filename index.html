@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
+    <link rel="stylesheet" href="cadastro.css">
+    <title>BMS Veículos Cadastro</title>
+</head>
+
+<body>
+    
+    <main class="container">
+        
+      <form>
+            <h1>Cadastro</h1>
+
+            <div class="logotipo">
+            <img src="logo vermelha.png" alt="logotipo" height="190"><br>
+            </div>
+            <!--nome-->
+            <div class="input-box">
+                Nome <br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+            </div>
+             <!--telefone-->
+            <div class="input-box">
+                Telefone <br>
+                <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\)\s\d{4,5}-\d{4}"  required>
+            </div>
+            
+            
+              <!--Campo para e-mail-->
+            <div class="input-box">
+              E-mail <br>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+               
+              </div>
+              <!--Campo para senha-->
+            <div class="input-box">
+              Senha <br>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" minlength="6" required>
+                <i class="bx bxs-lock-alt"></i>
+               <h6> no mínimo 6 caracteres </h6> 
+            </div>
+            <!--Confirmar senha-->
+            <div class="input-box">
+              Confirmar Senha <br>
+                <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Digite sua senha"  minlength="6" required>
+                <i class="bx bxs-lock-alt"></i> 
+               <h6> no mínimo 6 caracteres </h6>
+            </div> <br>
+              <!--Botão de login-->
+               <button class="cadastro" onclick="alert('cadastro realizado')">Cadastrar</button>
+              
+
+        </form>
+
+    </main>
+
+</body>
+</html>
